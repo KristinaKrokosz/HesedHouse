@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<h1 style="font-family:verdana; color:tomato; text-align:center; background-color:mediumblue;">Search for Recipients</h1>
+<hr/>
+<form action="/action_page.php">
+  <a href="default.asp">
+    <img src="hesedhouse.jpg" alt="Hesed House Home Page" style="width:120px;height:120px;">
+  </a>
+
+  <label style="font-family:verdana; color:tomato; float:right;">Welcome kimbreezy42!</label>
+
+
+
+  <p style="text-align:center; color:mediumblue; font-family:verdana;"><strong>ID #</strong></p>
+
+<p style="text-align:center;">
+  <input type="text" name="id">
+
+</p>
+
+<p style="text-align:center; color:mediumblue; font-family:verdana;">
+<label>OR</label>
+</p>
+
+  <br>
+
+  <div>
+    <p style="text-align:center; font-family:verdana; color:mediumblue;">
+    <label for="firstname"><strong>First Name</strong></label>
+
+    <input type="text" name="firstname" />
+&nbsp;
+&nbsp;
+
+    <label for="name"><strong>Last Name</strong></label>
+
+    <input type="text" name="lastname" />
+  </p>
+
+  </div>
+
+  <br>
+
+  <p style="text-align:center; font-family:verdana;"><button>Search</button></p>
+
+
+</form>
+
+
+</body>
+</html>
