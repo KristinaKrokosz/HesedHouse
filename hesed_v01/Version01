@@ -1,0 +1,7 @@
+Version_01: 
+-Login works without encrypted password and error display needs to be fixed. 
+-Search table needs to be redesigned and results are not intractable.
+-Admin page needs to be designed.
+-Recipent registraion page needs to have cvs file ability.
+-Employee registration page needs to be redesigned.
+-Item and check out pages still need to be designed.
