@@ -1,0 +1,295 @@
+<?php include 'order-act.php';?>
+
+<html>
+<head>  
+    <title>Categories</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+</head>
+<body>
+    
+          <table class="table table-bordered table-striped myTable">
+                <thead>
+                  <tr>
+                    <th>Choose Category<button style="position:absolute; top:0; right:0;" type='submit' name='order_btn1'>Order</button></th>
+                    
+                
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr>
+                    <td >
+                            <div class="container tableConta" >
+                                    
+                                    
+                                    <div class="panel-group ">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                          <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#collapse1">Fall Clothes</a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+
+                                          <div class="panel-body">Light Jackets
+                                            <select>
+                                              <option value ='0'>0</option>
+                                              <option value='1'>1</option>
+                                              <option value = '2'>2</option>
+                                            </select> 
+                                            <p><?php echo ($_POST[])></p> this is what I want to pull from database last recieved : date and next available: date                         
+                                          </div>
+                                          <div class="panel-body">Light Gloves
+                                            <select>
+                                              <option value ='0'>0</option>
+                                              <option value ='1'>1</option>
+                                            </select> 
+                                          </div>
+                                          <div class="panel-body">Long Sleeved Shirts
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+                                          </div>
+                                          <div class="panel-body">Fleece Shirts
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+                                          </div>
+                                          <div class="panel-body">Sweaters
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+                                          </div>
+                                          <div class="panel-body">Vests
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+                                          </div>
+                                          <div class="panel-body">Leather/Suede Shoes
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+                                          </div>
+                                          <div class="panel-body">Sweat Pants
+                                            <select>
+                                              <option value="0">0</option>
+                                              <option value="1">1</option>
+                                            </select>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                                                     
+                            
+                            </div>
+                    </div>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td><div class="container tableContainer">
+                                    
+                                    
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse2">Winter Clothes</a>
+                              </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                              <div class="panel-body">Heavy Coat
+                                <select>
+                                  <option value ='0'>0</option>
+                                  <option value='1'>1</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Heavy Gloves
+                                <select>
+                                  <option value ='0'>0</option>
+                                  <option value ='1'>1</option>
+                                </select> 
+                              </div>
+                              <div class="panel-body">Heavy Socks
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Scarves
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Ski Caps
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Thermal Tops
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Thermal Bottoms
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Hand Warmers
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                              </div>
+                              <div class="panel-body">Foot Warmers
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                  </select>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                          </td>
+                    
+                  </tr>
+                  <tr>
+                    <td><div class="container tableContainer">
+                                    
+                                    
+                      <div class="panel-group">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" href="#collapse3">Spring/Summer Clothes</a>
+                            </h4>
+                          </div>
+                          <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">Mens Shorts
+                              <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                              </select>
+                            </div>
+                            <div class="panel-body">Ladies Shorts
+                              <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                              </select>
+                            </div>
+                            <div class="panel-body">Mens Short Sleeved Shirts 
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="panel-body">Womens Short Sleeved Shirts 
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                  </select>
+                            </div>
+                            <div class="panel-body">Gym Shoes
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="panel-body">Sandals
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="panel-body">Flip/Flops
+                                <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                            </div>
+                            
+                          </td>
+                    
+                  </tr>
+                 
+                  <tr>
+                      <td><div class="container tableContainer">
+                                    
+                                    
+                          <div class="panel-group">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" href="#collapse4">Other Items</a>
+                                </h4>
+                              </div>
+                              <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">Belts
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  </select>
+                              </div>
+                              <div class="panel-body">Purses
+                                    <select>
+                                      <option value="0">0</option>
+                                      <option value="1">1</option>
+                                    </select>
+                              </div>
+                              <div class="panel-body">Wallets
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  </select>
+                              </div>
+                              <div class="panel-body">Back Packs
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  </select>
+                              </div>
+                              <div class="panel-body">Other Carry Bags
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  </select>
+                              </div>
+                              <div class="panel-body">Work Boots
+                                  <select>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  </select>
+                              </div>
+
+                        </td>
+                  </tr>
+            
+                </tbody>
+        </table>
+          
+</body>

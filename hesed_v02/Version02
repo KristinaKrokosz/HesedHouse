@@ -1,0 +1,21 @@
+Version_02: 
+
+-Login works without encrypted password and error display needs to be fixed.
+
+-Employee and Recipient registration page needs to be redesigned.
+
+-Recipent registraion page needs to have cvs file ability.
+ 
+-Results table needs to be redesigned????
+
+-Add search bar on top of search table that is to research for recipients and display new results.
+
+-Order table only fills up with info from the last person from the results table regardless of which order button in pressed
+
+-Items page needs to display recieve date and next avaliable date.
+
+-Items page needs back end work to update orders table with items info.
+
+-Confirm page need to be designed.
+
+
