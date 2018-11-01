@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="global.css">
 
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
 <?php
 
 $orderid;
@@ -38,6 +41,14 @@ if (isset($_GET['searchbtn'])) {
 		}
 
 		else{
+
+			echo " <form method='get' action='search-act.php'>
+					<div>
+        				<label for='searchid'></label>
+          					<input class= 'form-control' type='text' name='searchid' placeholder='Enter Recipient Info' required>
+         					<button class='btn btn-warning' type='submit' name ='searchbtn'> Search</button>
+         			</div>
+         			</form>";
 			echo "<table>";
 			echo "<tr><th>ID</th><th>Name</th><th>Birth Date</th><th>Button</th>"; 
 			while($row = mysqli_fetch_array($result)) {
@@ -55,8 +66,8 @@ if (isset($_GET['searchbtn'])) {
 
 				echo "<tr><td>" . $recipient_id . "  </td>";
 				echo "<td>" . $first_name . " ";
-				echo $row['last_name'] . " </td>";
-				echo "<td>" . $last_name . " ";
+				echo $last_name . " </td>";
+				echo "<td>" . $rec_date . " ";
 
 				echo "<td><form method='post'>  
 				<button type='submit' name='order_btn' class='btn btn-primary btn-block'>Order</button>  </tr>";
