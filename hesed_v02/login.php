@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- jhjbjbjb -->
 </head>
-<body>
+<body class="loginpage">
   <div class="loginBox">
 
     <form method="post" action="login.php" class="lg">
@@ -23,18 +23,15 @@
       </div>
 
       <button type="submit" name="login" class="btn btn-primary btn-block">Login</button>
-      <p>Do not have an account? <a href="register.php">Sign up</a>
-      </p>
     </form>
   </div>
-
 
   <?php
 
   if(isset($_POST["login"])){
    $username=$_POST['username'];
    $password=$_POST['password'];
-          //$db = mysqli_connect('localhost', 'root', '', 'hesed_house');
+
    $connects =mysqli_connect('localhost', 'root', '', 'hesed_house');
 
    if($connects){               
@@ -56,8 +53,11 @@
        header("Location: searchpage.html"); /* Redirect browser */                      
      }  
    }
-   else{
-    echo "error";
+   if($count==0){
+
+    echo "<script>
+            alert ('Login unsuccessful. Please check the username and password');
+          </script>";
   }
 
   if (!$connects) {
