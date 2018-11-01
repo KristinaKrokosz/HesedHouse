@@ -37,7 +37,17 @@ if (isset($_GET['searchbtn'])) {
 		}
 
 		if($count == 0) {
-			echo "no search results";
+			echo " <form method='get' action='search-act.php'>
+					<div>
+        				<label for='searchid'></label>
+          					<input class= 'form-control' type='text' name='searchid' placeholder='Enter Recipient Info' required>
+         					<button class='btn btn-warning' type='submit' name ='searchbtn'> Search</button>
+         			</div>
+         			</form>
+         				<div class='lg'>
+         					No user found. Try again.
+  
+  						</div>";
 		}
 
 		else{
