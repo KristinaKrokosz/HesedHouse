@@ -37,30 +37,42 @@ if (isset($_GET['searchbtn'])) {
 		}
 
 		if($count == 0) {
-			echo " <form method='get' action='search-act.php'>
+			echo " <title>Search Results</title>
+			<form method='get' action='search-act.php'>
 					<div>
         				<label for='searchid'></label>
           					<input class= 'form-control' type='text' name='searchid' placeholder='Enter Recipient Info' required>
-         					<button class='btn btn-warning' type='submit' name ='searchbtn'> Search</button>
+         					<button class='btn btn-secondary' type='submit' name ='searchbtn'> Search</button>
          			</div>
          			</form>
          				<div class='lg'>
-         					No user found. Try again.
+         					No user found. Please try again.
   
   						</div>";
 		}
 
 		else{
 
-			echo " <form method='get' action='search-act.php'>
-					<div>
+			echo   "<title>Search Results</title>
+			<form method='get' action='search-act.php'>
+						
+				<div styles = 'margin-right:10000;' class='col-6' >
+					<div class='input-group'>
+        		
         				<label for='searchid'></label>
-          					<input class= 'form-control' type='text' name='searchid' placeholder='Enter Recipient Info' required>
-         					<button class='btn btn-warning' type='submit' name ='searchbtn'> Search</button>
+          				<input class= 'form-control' type='text' name='searchid' placeholder='Enter Recipient Info' required>
+ 				
+ 						<span class='input-group-addon'>
+         					<button style='right:0;' class='btn btn-secondary' type='submit' name ='searchbtn'>Search</button>
+         				</span>
+         		
          			</div>
-         			</form>";
+         		</div>
+         	</form>";
+
 			echo "<table>";
-			echo "<tr><th>ID</th><th>Name</th><th>Birth Date</th><th>Button</th>"; 
+			echo "<tr><th>ID</th><th>Name</th><th>Birth Date</th><th></th></tr>"; 
+			
 			while($row = mysqli_fetch_array($result)) {
 				
 				$first_name = $row['first_name'];
@@ -69,7 +81,9 @@ if (isset($_GET['searchbtn'])) {
 				$last_name = $row['last_name'];
 				$last_name = mysqli_real_escape_string($connects, $last_name);
 
-				$rec_date = date("Y-m-d");
+				$rec_date_dis = date("F jS, Y");
+				$rec_date = date("y-m-d");
+
 				$rec_date = mysqli_real_escape_string($connects, $rec_date);
 
 				$recipient_id = $row['recipient_id'];
@@ -77,7 +91,7 @@ if (isset($_GET['searchbtn'])) {
 				echo "<tr><td>" . $recipient_id . "  </td>";
 				echo "<td>" . $first_name . " ";
 				echo $last_name . " </td>";
-				echo "<td>" . $rec_date . " ";
+				echo "<td>" . $rec_date_dis . " </td>";
 
 				echo "<td><form method='post'>  
 				<button type='submit' name='order_btn' class='btn btn-primary btn-block'>Order</button>  </tr>";

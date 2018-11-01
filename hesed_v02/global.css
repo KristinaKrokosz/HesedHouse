@@ -2,6 +2,12 @@ body{
     background-image: url("wood.jpg");
 }
 
+.searchPgBox{
+
+  margin:center;
+
+}
+
 .lg{
   margin: auto;
   position: absolute;
@@ -46,11 +52,12 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
+    text-align:center;
 }
 
 td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
+    border: 1px solid #black;
+    text-align:center;
     padding: 8px;
 }
 
