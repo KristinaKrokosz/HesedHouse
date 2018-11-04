@@ -1,6 +1,9 @@
 body{
-    background-image: url("wood.jpg");
-}
+    background-image: url("clothes.jpg");
+    background-size: cover;
+    /* Center and scale the image nicely */
+    background-size: cover;
+  }
 
 .searchPgBox{
 
@@ -48,7 +51,7 @@ body{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
